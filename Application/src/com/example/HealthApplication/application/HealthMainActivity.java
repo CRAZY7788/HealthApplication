@@ -1,4 +1,4 @@
-package com.example.HealthApplication;
+package com.example.HealthApplication.application;
 
 import android.app.Activity;
 import android.os.Bundle;
