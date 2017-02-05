@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bef3b80-16f8-4ea4-a59a-da35c54aaa6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/com/example/HealthApplication/HealthMainActivity.java" afterPath="$PROJECT_DIR$/Application/src/com/example/HealthApplication/HealthMainActivity.java" />
-    </list>
+    <list default="true" id="1bef3b80-16f8-4ea4-a59a-da35c54aaa6d" name="Default" comment="" />
     <ignored path="HealthApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
