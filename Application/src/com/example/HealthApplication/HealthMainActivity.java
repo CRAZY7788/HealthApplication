@@ -15,6 +15,6 @@ public class HealthMainActivity extends Activity {
         setContentView(layout.main);
     }
     public void test(){
-        
+
     }
 }
