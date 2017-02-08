@@ -6,6 +6,11 @@ import android.os.Bundle;
 import static com.example.HealthApplication.R.*;
 
 public class HealthMainActivity extends Activity {
+
+
+
+
+
     /**
      * Called when the activity is first created.
      */
@@ -14,7 +19,7 @@ public class HealthMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(layout.main);
     }
-    public void test(){
+    private void init(){
 
     }
 }
