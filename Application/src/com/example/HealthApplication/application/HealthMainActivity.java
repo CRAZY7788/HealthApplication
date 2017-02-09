@@ -35,6 +35,7 @@ public class HealthMainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.main);
+        setupExpandableList();
     }
     private void init(){
         mLeftPanel = (LinearLayout) findViewById(id.ll_home_page_left_panel);
