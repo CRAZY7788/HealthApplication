@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id name="personal_info_resource_id">0</id>
+    <id name="diet_record_resource_id">1</id>
+    <id name="fitness_resource_id">2</id>
+    <id name="self_test_resource_id">3</id>
+    <id name="medical_test_resource_id">4</id>
+    <id name="line_chart_resource_id">5</id>
+
+</resources>

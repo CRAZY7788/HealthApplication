@@ -68,16 +68,13 @@ public class ExpandView extends LinearLayout {
         mContainer.setBackground(a.getDrawable(10));
 
         if(mTextView != null) {
-//            mTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-//                    a.getDimensionPixelSize(10,
-//                            (int) mTextView.getTextSize()));
+            mTextView.setTextSize(20);
 
 //            ColorStateList list = a.getColorStateList(10);
 //            if(list != null) {
-//                mTextView.setTextColor(list);
+                mTextView.setTextColor(100);
 //            }
-//            mHeaderContainer.setBackground(
-//                    a.getDrawable(10));
+            mHeaderContainer.setBackgroundColor(200);
 
             if(context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
                 mTextView.setGravity(Gravity.END);

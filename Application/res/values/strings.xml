@@ -2,4 +2,17 @@
 <resources>
     <string name="app_name">HealthMainActivity</string>
     <string name="task_selection">Select Task</string>
+    <string name="personal_info_header">Info</string>
+    <string name="diet_record_header">Diet</string>
+    <string name="fitness_header">Fitness</string>
+    <string name="self_test_header">Self Test</string>
+    <string name="medical_test_header">Medical Test</string>
+    <string name="line_chart_header">Line Chart</string>
+
+    <string name="personal_info_child_text">0</string>
+    <string name="diet_record_child_text">1</string>
+    <string name="fitness_child_text">2</string>
+    <string name="self_test_child_text">3 </string>
+    <string name="medical_test_child_text">4 </string>
+    <string name="line_chart_child_text">5</string>
 </resources>
