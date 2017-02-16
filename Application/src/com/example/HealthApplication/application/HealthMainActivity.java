@@ -31,6 +31,8 @@ public class HealthMainActivity extends Activity {
     private ExpandView mExpandableLayout;
 
 
+
+
     /**
      * Called when the activity is first created.
      */
@@ -181,7 +183,7 @@ public class HealthMainActivity extends Activity {
         switch(task){
             case 0:
                 intent = new Intent();
-                intent.putExtra();
+//                intent.putExtra();
         }
 
     }
