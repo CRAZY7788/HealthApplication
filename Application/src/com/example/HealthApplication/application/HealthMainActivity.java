@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import com.example.HealthApplication.R;
+import com.example.HealthApplication.application.activity.PatientInfoActivity;
 import com.example.HealthApplication.application.fragment.ExpandView;
 
 import java.util.ArrayList;
@@ -182,8 +183,9 @@ public class HealthMainActivity extends Activity {
         Intent intent;
         switch(task){
             case 0:
-                intent = new Intent();
-//                intent.putExtra();
+                intent = new Intent(getApplicationContext(), PatientInfoActivity.class);
+                startActivity(intent);
+
         }
 
     }
