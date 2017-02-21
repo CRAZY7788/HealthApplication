@@ -62,9 +62,9 @@ public class HealthMainActivity extends Activity {
             TextView childTextView = (TextView) linearLayout.findViewById(id.tv_task_description);
             Button button = (Button) linearLayout.findViewById(id.bt_task_open);
             layout.addView(mainView);
-
             childTextView.setText(layoutData.getChildStringId());
 
+            layout.setText(layoutData.getHeaderStringId());
             button.setText("button");
 
             button.setOnClickListener(new View.OnClickListener() {

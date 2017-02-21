@@ -59,7 +59,7 @@ public class ExpandView extends LinearLayout {
         mImageView= (ImageView) rootView.findViewById(R.id.expandable_layout_arrow);
         ViewGroup header = (ViewGroup) rootView.findViewById(R.id.expandable_layout_header);
         setHeaderView(context, header);
-//        mTextView = (TextView) rootView.findViewById(R.id.title);
+        mTextView = (TextView) rootView.findViewById(R.id.title);
         mHeaderContainer = (ViewGroup) findViewById(R.id.expandable_layout_header_container);
         int[] m = new int[3];
 
@@ -133,7 +133,7 @@ public class ExpandView extends LinearLayout {
 
     public void setStartingDrawable(int src) {
         if(mTextView != null) {
-            mTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(src, 0, 0, 0);
+//            mTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(src, 0, 0, 0);
         }
     }
 
