@@ -9,4 +9,10 @@ import com.example.HealthApplication.mvp.mvpbaseClass.MvpBasePresenter;
  */
 
 public interface IPersonalInfoPresenter extends IMvpBasePresenter<IPersonalInfoView> {
+
+    void initView();
+
+    void setName(String name);
+
+
 }

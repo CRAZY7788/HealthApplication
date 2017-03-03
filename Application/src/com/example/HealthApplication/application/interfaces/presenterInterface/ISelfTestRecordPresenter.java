@@ -8,4 +8,7 @@ import com.example.HealthApplication.mvp.mvp_interface.IMvpBasePresenter;
  */
 
 public interface ISelfTestRecordPresenter extends IMvpBasePresenter<ISelfTestRecordView> {
+    void initAddFoamingView();
+    void initAddProfessionalView();
+    void initShowView();
 }

@@ -9,4 +9,20 @@ import com.example.HealthApplication.mvp.mvpbaseClass.MvpBasePresenter;
  */
 
 public class SelfTestRecordPresenter extends MvpBasePresenter<ISelfTestRecordView> implements ISelfTestRecordPresenter {
+
+
+    @Override
+    public void initAddFoamingView() {
+
+    }
+
+    @Override
+    public void initAddProfessionalView() {
+
+    }
+
+    @Override
+    public void initShowView() {
+
+    }
 }

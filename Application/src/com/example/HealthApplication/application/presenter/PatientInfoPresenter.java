@@ -13,4 +13,14 @@ import com.example.HealthApplication.mvp.mvpbaseClass.MvpBasePresenter;
 
 public class PatientInfoPresenter extends MvpBasePresenter<IPersonalInfoView> implements IPersonalInfoPresenter {
 
+
+    @Override
+    public void initView() {
+        getView().initView();
+    }
+
+    @Override
+    public void setName(String name) {
+
+    }
 }

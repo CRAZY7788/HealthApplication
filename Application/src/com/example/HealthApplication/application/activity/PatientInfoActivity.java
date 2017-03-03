@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import com.example.HealthApplication.R;
 import com.example.HealthApplication.application.interfaces.presenterInterface.IPersonalInfoPresenter;
 import com.example.HealthApplication.application.interfaces.viewInterface.IPersonalInfoView;
+import com.example.HealthApplication.application.presenter.PatientInfoPresenter;
 import com.example.HealthApplication.mvp.mvpbaseClass.MvpBaseActivity;
 
 /**
@@ -15,16 +16,20 @@ import com.example.HealthApplication.mvp.mvpbaseClass.MvpBaseActivity;
 
 public class PatientInfoActivity extends MvpBaseActivity<IPersonalInfoView,IPersonalInfoPresenter> implements IPersonalInfoView {
 
+    private IPersonalInfoPresenter mPresenter;
 
     @Override
     public void onCreateActivity(Bundle bundle){
         super.onCreate(bundle);
         setContentView(R.layout.base_activity_layout);
+        mPresenter = new PatientInfoPresenter();
+
+        getPresenter().initView();
     }
 
     @Override
     public IPersonalInfoPresenter getPresenter() {
-        return null;
+        return mPresenter;
     }
 
     @Override

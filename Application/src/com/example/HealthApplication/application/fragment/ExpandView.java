@@ -65,7 +65,7 @@ public class ExpandView extends LinearLayout {
 
         TypedArray a = context.obtainStyledAttributes(attrs, m,
                 style, 0);
-        mContainer.setBackground(a.getDrawable(10));
+//        mContainer.setBackground(a.getDrawable(10));
 
         if(mTextView != null) {
             mTextView.setTextSize(20);

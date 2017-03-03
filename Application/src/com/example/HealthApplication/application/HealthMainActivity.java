@@ -16,6 +16,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import com.example.HealthApplication.R;
 import com.example.HealthApplication.application.activity.PatientInfoActivity;
+import com.example.HealthApplication.application.activity.SelfTestRecordActivity;
 import com.example.HealthApplication.application.fragment.ExpandView;
 
 import java.util.ArrayList;
@@ -185,6 +186,11 @@ public class HealthMainActivity extends Activity {
             case 0:
                 intent = new Intent(getApplicationContext(), PatientInfoActivity.class);
                 startActivity(intent);
+                break;
+            case 3:
+                intent = new Intent(getApplicationContext(), SelfTestRecordActivity.class);
+                startActivity(intent);
+                break;
 
         }
 
