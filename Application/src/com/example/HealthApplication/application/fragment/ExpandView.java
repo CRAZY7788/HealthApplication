@@ -76,12 +76,12 @@ public class ExpandView extends LinearLayout {
 //            }
             mHeaderContainer.setBackgroundColor(200);
 
-            if(context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-                mTextView.setGravity(Gravity.END);
-            }
-            else {
-                mTextView.setGravity(Gravity.START);
-            }
+//            if(context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+//                mTextView.setGravity(Gravity.END);
+//            }
+//            else {
+//                mTextView.setGravity(Gravity.START);
+//            }
         }
         a.recycle();
 

@@ -9,8 +9,7 @@ import java.sql.Timestamp;
 
 public interface ISelfRecordDataModel {
 
-    void setData(double data, Date date, int clock);
-    double getSingleDataByDateAndTime(Date date,int clock);
-    double getAllDateSumByDate(Date date);
+    void setData(int id,int data, String date);
+    int getSingleDayValue(String date);
 
 }

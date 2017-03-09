@@ -13,5 +13,5 @@ public interface ISelfTestRecordPresenter extends IMvpBasePresenter<ISelfTestRec
     void initAddFoamingView();
     void initAddProfessionalView();
     void initShowView();
-    void saveData(Date date, int clock, double foamingValue);
+    void saveData(String date, int foamingValue);
 }

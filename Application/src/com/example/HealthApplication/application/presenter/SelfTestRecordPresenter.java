@@ -1,6 +1,8 @@
 package com.example.HealthApplication.application.presenter;
 
 import android.content.Context;
+import android.text.format.DateFormat;
+import android.text.format.DateUtils;
 
 import com.example.HealthApplication.application.dataModel.SelfRecordDataModel;
 import com.example.HealthApplication.application.interfaces.presenterInterface.ISelfTestRecordPresenter;
@@ -35,8 +37,8 @@ public class SelfTestRecordPresenter extends MvpBasePresenter<ISelfTestRecordVie
     }
 
     @Override
-    public void saveData(Date date, int clock, double foamingValue) {
+    public void saveData(String date, int foamingValue) {
         SelfRecordDataModel dma = new SelfRecordDataModel(getApplicationContext());
-        dma.setData();
+//        dma.setData();
     }
 }
