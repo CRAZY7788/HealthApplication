@@ -59,13 +59,13 @@ public class ExpandView extends LinearLayout {
         mImageView= (ImageView) rootView.findViewById(R.id.expandable_layout_arrow);
         ViewGroup header = (ViewGroup) rootView.findViewById(R.id.expandable_layout_header);
         setHeaderView(context, header);
-//        mTextView = (TextView) rootView.findViewById(R.id.title);
+        mTextView = (TextView) rootView.findViewById(R.id.title);
         mHeaderContainer = (ViewGroup) findViewById(R.id.expandable_layout_header_container);
         int[] m = new int[3];
 
         TypedArray a = context.obtainStyledAttributes(attrs, m,
                 style, 0);
-        mContainer.setBackground(a.getDrawable(10));
+//        mContainer.setBackground(a.getDrawable(10));
 
         if(mTextView != null) {
             mTextView.setTextSize(20);
@@ -76,12 +76,12 @@ public class ExpandView extends LinearLayout {
 //            }
             mHeaderContainer.setBackgroundColor(200);
 
-            if(context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-                mTextView.setGravity(Gravity.END);
-            }
-            else {
-                mTextView.setGravity(Gravity.START);
-            }
+//            if(context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+//                mTextView.setGravity(Gravity.END);
+//            }
+//            else {
+//                mTextView.setGravity(Gravity.START);
+//            }
         }
         a.recycle();
 
@@ -133,7 +133,7 @@ public class ExpandView extends LinearLayout {
 
     public void setStartingDrawable(int src) {
         if(mTextView != null) {
-            mTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(src, 0, 0, 0);
+//            mTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(src, 0, 0, 0);
         }
     }
 

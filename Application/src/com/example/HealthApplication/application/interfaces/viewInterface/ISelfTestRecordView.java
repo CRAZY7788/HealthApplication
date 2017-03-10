@@ -7,4 +7,8 @@ import com.example.HealthApplication.mvp.mvp_interface.IMvpView;
  */
 
 public interface ISelfTestRecordView extends IMvpView {
+    void initViewForAddFoamingCard();
+    void initViewForAddProfessionalCard();
+    void initViewForResultCard();
+    void updateDataBase();
 }

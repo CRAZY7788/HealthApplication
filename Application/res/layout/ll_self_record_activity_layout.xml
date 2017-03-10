@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:layout_weight="0.3"
+            android:id="@+id/btn_add_self_foaming_record_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_weight="0.3"
+            android:id="@+id/btn_add_professinal_record_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_weight="0.3"
+            android:id="@+id/btn_show_record_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Space
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <include
+                android:id="@+id/add_foaming_record_view"
+                layout="@layout/sub_add_foaming_card"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <include
+                android:id="@+id/add_professional_record_view"
+                layout="@layout/sub_add_professional_card"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <include
+                android:id="@+id/show_result_card"
+                layout="@layout/sub_result_view_card"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:layout_toLeftOf="@+id/btn_close"
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
