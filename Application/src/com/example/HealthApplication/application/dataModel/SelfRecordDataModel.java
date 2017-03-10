@@ -1,6 +1,7 @@
 package com.example.HealthApplication.application.dataModel;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -17,6 +18,9 @@ import java.util.List;
  */
 
 public class SelfRecordDataModel implements ISelfRecordDataModel{
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+
 
     Context mContext;
     DatabaseHelper mHelper;
@@ -28,8 +32,11 @@ public class SelfRecordDataModel implements ISelfRecordDataModel{
 
     public SelfRecordDataModel(Context context){
         this.mContext = context;
-
         mHelper = new DatabaseHelper(context);
+
+        mSharedPreferences = context.getSharedPreferences("sharedData",context.MODE_PRIVATE);
+        mEditor = mSharedPreferences.edit();
+        mEditor.apply();
     }
 
 
@@ -43,6 +50,17 @@ public class SelfRecordDataModel implements ISelfRecordDataModel{
         SQLiteDatabase sqLiteDatabase = mHelper.getReadableDatabase();
         return 0;
     }
+
+    @Override
+    public int getPreferenceValue(String key) {
+        return mSharedPreferences.getInt(key,0);
+    }
+
+    @Override
+    public void setPreferenceValue(String key, int date) {
+        mEditor.putInt(key,date);
+    }
+
 
     public List<SelfFoamingStruct> getAllDate(){
         SQLiteDatabase db = null;
@@ -78,7 +96,7 @@ public class SelfRecordDataModel implements ISelfRecordDataModel{
 
 
     /**
-     * 将查找到的数据转换成Order类
+     * Convert into the same data format.
      */
     private SelfFoamingStruct parseStruct(Cursor cursor){
         SelfFoamingStruct selfFoamingStruct = new SelfFoamingStruct();
@@ -102,7 +120,7 @@ public class SelfRecordDataModel implements ISelfRecordDataModel{
 //        System.out.print("success");
 //    }
 
-    public void insertData(int id,String date, int value){
+    private void insertData(int id,String date, int value){
         SQLiteDatabase sqLiteDatabase = mHelper.getWritableDatabase();
         sqLiteDatabase.beginTransaction();
 

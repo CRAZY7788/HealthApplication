@@ -1,6 +1,7 @@
 package com.example.HealthApplication.application.interfaces.presenterInterface;
 
 import com.example.HealthApplication.application.interfaces.viewInterface.ISelfTestRecordView;
+import com.example.HealthApplication.application.utils.ClockEnum;
 import com.example.HealthApplication.mvp.mvp_interface.IMvpBasePresenter;
 
 import java.sql.Date;
@@ -14,4 +15,6 @@ public interface ISelfTestRecordPresenter extends IMvpBasePresenter<ISelfTestRec
     void initAddProfessionalView();
     void initShowView();
     void saveData(String date, int foamingValue);
+    void setSingleDayValue(String date, ClockEnum clock, int value);
+
 }

@@ -12,4 +12,10 @@ public interface ISelfRecordDataModel {
     void setData(int id,int data, String date);
     int getSingleDayValue(String date);
 
+    int getPreferenceValue(String key);
+
+
+    void setPreferenceValue(String key,int date);
+
+
 }
